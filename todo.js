@@ -37,10 +37,12 @@ function handleSubmit(event) {
 }
 
 function loadToDos() {
-  const toDos = localStorage.getItem(TODOS_LS);
-  // writeing no.3
-  if (toDos !== null) {
-    // writing no.4
+  const loadedToDos = localStorage.getItem(TODOS_LS);
+  if (loadedToDos !== null) {
+    const parsedToDos = JSON.parse(loadedToDos);
+    parsedToDos.forEach(function (toDo) {
+      paintToDo(toDo.text);
+    });
   }
 }
 
