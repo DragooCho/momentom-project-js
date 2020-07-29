@@ -4,7 +4,20 @@ const toDoForm = document.querySelector(".js-toDoForm"),
 
 const TODOS_LS = "toDos";
 
-const toDos = [];
+let toDos = [];
+
+function deleteToDo(event) {
+  const btn = event.target;
+  const li = btn.parentNode;
+  toDoList.removeChild(li);
+  const cleanToDos = toDos.filter(function (toDo) {
+    return toDo.id !== parseInt(li.id);
+  });
+  toDos = cleanToDos;
+  saveTodos();
+}
+
+//parseInt는 string을 숫자로 바꿀수 있다.
 
 function saveTodos() {
   localStorage.setItem(TODOS_LS, JSON.stringify(toDos));
@@ -16,6 +29,7 @@ function paintToDo(text) {
   const span = document.createElement("span");
   const newId = toDos.length + 1;
   delbtn.innerText = "❌";
+  delbtn.addEventListener("click", deleteToDo);
   span.innerText = text;
   li.appendChild(delbtn);
   li.appendChild(span);
@@ -52,4 +66,3 @@ function init() {
 }
 
 init();
-// xfbdxbdfxbdxbn
