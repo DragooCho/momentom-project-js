@@ -1,10 +1,20 @@
+const weather = document.querySelector(".js-weather");
+
 const API_KEY = "f8227a305be5ba70e440a6d93f7e90d0";
 const COORDS = "coords";
 
 function getWeather(lat, log) {
   fetch(
-    `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${log}&appid=${API_KEY}`
-  );
+    `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${log}&appid=${API_KEY}&units=metric`
+  )
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (json) {
+      const temperature = json.main.temp;
+      const place = json.name;
+      weather.innerText = `${temperature} @ ${place}`;
+    });
 }
 
 function saveCoords(coordsObj) {
