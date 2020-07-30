@@ -97,3 +97,12 @@ function deleteToDo(event) {
 
 //parseInt는 string을 숫자로 바꿀수 있다.
 
+
+
+
+
+
+
+
+
+//latitude,longitude외에 다른 위치정보고 추가해보자.
