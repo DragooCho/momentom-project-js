@@ -1,4 +1,4 @@
-const body = document.querySelector("body");
+const bgArea = document.querySelector(".bgArea");
 
 const IMG_NUMBER = 12;
 
@@ -10,7 +10,7 @@ function paintImage(imgNumber) {
   const image = new Image();
   image.src = `images/${imgNumber + 1}.jpg`;
   image.classList.add("bgImage");
-  body.prepend(image);
+  bgArea.prepend(image);
 }
 
 function genRandom() {
