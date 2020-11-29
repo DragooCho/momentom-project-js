@@ -8,7 +8,9 @@ function handleImgLoad() {
 
 function paintImage(imgNumber) {
   const image = new Image();
-  image.src = `images/${imgNumber + 1}.jpg`;
+  // image.src = `images/${imgNumber + 1}.jpg`;
+  image.src = `https://source.unsplash.com/1920x1080/?dog,cat,
+  rabbit`;
   image.classList.add("bgImage");
   bgArea.prepend(image);
 }

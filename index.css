@@ -1,10 +1,15 @@
 body {
   background-color: #ffffff;
-  color: #34495e;
+  color: #000000;
 }
 
 .btn {
   cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+  margin-right: 20px;
 }
 
 .clicked {
@@ -45,6 +50,14 @@ body {
   margin-bottom: -40px;
 }
 
+.js-clock h1,
+.canterInformation h4 {
+  background-color: rgba(255, 255, 255, 0.445);
+  color: rgb(0, 0, 0);
+  border-radius: 20px;
+  padding: 30px;
+}
+
 .js-greetings {
   font-size: 35px;
 }
@@ -54,16 +67,22 @@ body {
   height: 40px;
   font-size: 30px;
 }
-.js-toDoForm input {
-  width: 400px;
-  height: 40px;
-  font-size: 30px;
-}
 
 .js-toDoList li {
   font-size: 35px;
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+.js-toDoList li span {
+  background-color: rgba(255, 255, 255, 0.39);
+  width: 400px;
+  height: 40px;
+  font-size: 30px;
+  border-radius: 20px;
+  padding: 10px;
+  margin-bottom: 20px;
 }
 .js-toDoList {
   margin-top: 35px;
@@ -78,4 +97,14 @@ body {
 
 .js-weather {
   font-size: 35px;
+}
+
+form input {
+  all: unset;
+  background-color: rgba(255, 255, 255, 0.603);
+  width: 400px;
+  height: 40px;
+  font-size: 30px;
+  border-radius: 20px;
+  padding: 10px;
 }
