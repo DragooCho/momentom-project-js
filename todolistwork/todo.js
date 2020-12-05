@@ -17,8 +17,6 @@ function deleteToDo(event) {
   saveTodos();
 }
 
-//parseInt는 string을 숫자로 바꿀수 있다.
-
 function saveTodos() {
   localStorage.setItem(TODOS_LS, JSON.stringify(toDos));
 }

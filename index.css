@@ -3,14 +3,14 @@ body {
   color: #000000;
 }
 
-.btn {
+/* .btn {
   cursor: pointer;
 }
 
 button {
   cursor: pointer;
   margin-right: 20px;
-}
+} */
 
 .clicked {
   color: #7f8c8d;
@@ -68,6 +68,11 @@ button {
   font-size: 30px;
 }
 
+.js-toDoList {
+  margin-top: 35px;
+  padding-left: 0px;
+}
+
 .js-toDoList li {
   font-size: 35px;
   display: flex;
@@ -84,9 +89,19 @@ button {
   padding: 10px;
   margin-bottom: 20px;
 }
-.js-toDoList {
-  margin-top: 35px;
-  padding-left: 0px;
+
+.js-toDoList li button {
+  color: rgba(201, 126, 126, 0);
+  cursor: pointer;
+  margin-right: 20px;
+  width: 10px;
+  height: 10px;
+  text-align: center;
+  all: unset;
+  /* font-size: 30px; */
+  border-radius: 5px;
+  border: solid rgb(0, 0, 0) 2px;
+  margin-right: 20px;
 }
 
 .canterInformation {
