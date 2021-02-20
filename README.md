@@ -1,4 +1,4 @@
-# JavaScript 투투 리스트 어플리케이션
+# JavaScript To-do List 웹 어플리케이션
 
 ![ex_screenshot](https://dragoocho.netlify.app/4bc560a625e253b2f794015c9371c50b/todo.gif)
 
